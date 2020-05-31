@@ -1,0 +1,451 @@
+body, p, ul, h2{
+    margin: 0;
+}
+h2 {
+    padding: 0;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+// 媒体查询
+body, p, ul, h2{
+    margin: 0;
+}
+h2 {
+    padding: 0;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+
+// 解决滚动条问题
+::-webkit-scrollbar  
+{  
+	display: none!important;
+    width: 0px;  
+    height: 0px;  
+}
+
+// 媒体查询
+html {
+    // 媒体
+    @media screen and (max-width: 319px) {
+        font-size: 540px / 15;
+    }
+    @media screen and (min-width: 320px) {
+        font-size: 320px / 15;
+    }
+    @media screen and (min-width: 360px) {
+        font-size: 360px / 15;
+    }
+    @media screen and (min-width: 375px) {
+        font-size: 375px / 15;
+    }
+    @media screen and (min-width: 384px) {
+        font-size: 384px / 15;
+    }
+    @media screen and (min-width: 400px) {
+        font-size: 400px / 15;
+    }
+    @media screen and (min-width: 414px) {
+        font-size: 414px / 15;
+    }
+    @media screen and (min-width: 424px) {
+        font-size: 424px / 15;
+    }
+    @media screen and (min-width: 484px) {
+        font-size: 484px / 15;
+    }
+    @media screen and (min-width: 540px) {
+        font-size: 540px / 15;
+    }
+    @media screen and (min-width: 720px) {
+        font-size: 720px / 15;
+    }
+    @media screen and (min-width: 750px) {
+        font-size: 750px / 15;
+    }
+}
+
+// 21等分
+body{
+    background-color: #fff;
+    font-size: 28 / 50rem;
+}
+
+// 包裹整体的div
+.main {
+    margin: auto;
+    width: 750 / 50rem;
+}
+
+// 搜索
+.search {
+    display: flex;
+    justify-content: center;
+    input {
+        padding-left: 50 / 50rem;
+        margin-top: 30 / 50rem;
+        width: 700 / 50rem;
+        height: 62 / 50rem;
+        border-radius: 1rem;
+        font-size: 20 / 50rem;
+        border: 0;
+        background: url(../fonts/2.png) no-repeat 18/50rem 20/50rem;
+        background-size: 21/50rem 21/50rem;
+        background-color: #f2f2f2;
+    }
+}
+
+// 导航
+.nav {
+    display: flex;
+    align-items : flex-end;
+    width: 700 / 50rem;
+    height: 100 / 50rem;
+    margin: auto;
+    margin-top: 10 / 50rem;
+    .navLeft {
+        overflow: scroll;
+        flex: 9;
+        .leftMain {
+            // 从JS中拿到数据，并计算数据的总宽 = 每个数据左右加起来算20px，多点也没事反正看不见!!!!!!!!!!!!!
+            width: 1800 / 50rem;
+            span {
+                // 左右填充
+                padding: 0 15/50rem;
+                line-height: 80 / 50rem;
+                font-size: 28 / 50rem;
+                color: #333;
+                cursor: pointer;
+            }
+            span.activeNav{
+                font-weight: 900;
+                font-size: 48 / 50rem;
+                line-height: 60 / 50rem;
+            }
+        }
+    }
+    .navContent {
+        line-height: 80 / 50rem;
+        flex: 1;
+        text-align: center;
+        color: #999;
+    }
+    .navRight {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15 / 50rem;
+        cursor: pointer;
+        img {
+            width: 40 / 50rem;
+            height: 40 / 50rem;
+        }
+        span {
+            font-size: 16 / 50rem;
+            padding-top: 6 / 50rem;
+        }
+    }
+}
+
+// 选项卡一
+.tab1 {
+    width: 700 / 50rem;
+    height: 274 / 50rem;
+    margin: auto;
+    margin-top: 43 / 50rem;
+    div{
+        position: relative;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 175 / 50rem;
+        height: 140 / 50rem;
+        span {
+            position: absolute;
+            bottom: 0;
+            font-weight: bold;
+            font-size: 15 / 50rem;
+        }
+    }
+    img{
+        width: 131 / 50rem;
+        height: 75 / 50rem;
+        margin-bottom: 20 / 50rem;
+    }
+    div:nth-child(8) {
+        img {
+            width: 110 / 50rem;
+            height: 58 / 50rem;
+        }
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+// tab2 最底下
+.tab2 {
+    width: 15rem;
+    height: 10000px;
+    margin: auto;
+    background-color: rgba(249, 249, 249);
+    .main_top {
+        width: 100%;
+        height: 125 / 50rem;
+        background-color: #fff;
+        padding-top: 50 / 50rem;
+        display: flex;
+        width: 15rem;
+        font-size: 26 / 50rem;
+        > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            cursor: pointer;
+            img {
+                width: 30 / 50rem;
+                height: 20 / 50rem;
+                padding-left: 10 / 50rem;
+            }
+        }
+        > div:nth-child(1) {
+            img {
+                width: 23 / 50rem;
+                height: 13 / 50rem;
+            }
+        }
+    }
+
+    .main_content {
+        width: 720 / 50rem;
+        margin: auto;
+        margin-top: 16 / 50rem;
+        // 通用
+        > div {
+            float: left;
+            width: 338 / 50rem;
+            height: 550 / 50rem;
+            border-radius: 10 / 50rem;
+            background-color: #fff;
+            margin-left: 22 / 50rem;
+            margin-top: 24 / 50rem;
+            // 上中下部分别对应123
+            > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                font-size: 26 / 50rem;
+                font-weight: lighter;
+                height: 90 / 50rem;
+            }
+            div:nth-child(2) {
+                padding-left: 22 / 50rem;
+                font-size: 26 / 50rem;
+                line-height: 40 / 50rem;
+                height: 80 / 50rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            > div:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 338 / 50rem;
+                height: 378 / 50rem;
+                div {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 24 / 50rem 0;
+                    span {
+                        font-size: 21 / 50rem;
+                        color: #999;
+                        padding-right: 11 / 50rem;
+                    }
+                    i {
+                        padding-right: 23 / 50rem;
+                        font-size: 40 / 50rem;
+                        color: #eb555c;
+                    }
+                }
+                div:nth-child(2) {
+                    height: 300 / 50rem;
+                    padding: 0;
+                    img {
+                        width: 330 / 50rem;
+                        height: 300 / 50rem;
+                    }
+                }
+            }
+            div:nth-child(3) {
+                display:flex;
+                span:nth-child(1) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 64 / 50rem;
+                    height: 32 / 50rem;
+                    background-color: #333;
+                    color: rgba(230, 191, 132);
+                    font-size: 18 / 50rem;
+                    border-radius: 5 / 50rem;
+                    margin-left: 22 / 50rem;
+                }
+                span:nth-child(2),
+                span:nth-child(3) {
+                    font-size: 25 / 50rem;
+                }
+                span:nth-child(2) {
+                    flex: 2;
+                    font-weight: 550;
+                    margin-left: 10 / 50rem;
+                    color: #333;
+                }
+                span:nth-child(3) {
+                    margin-right: 9 / 50rem;
+                    flex: 3;
+                    color: rgba(153, 153, 153)
+                }
+
+            }
+        }
+        > div:nth-child(2n-1) {
+            margin-left: 10 / 50rem;
+        }
+        > div:nth-child(1),
+        > div:nth-child(2) {
+            margin-top: 0;
+        }
+    }
+}
+
+
+// 种草wantToBuy  还没转rem
+.wantToBuy {
+    width: 700 / 50rem;
+    height: 410 / 50rem;
+    margin: auto;
+    margin-top: 53 / 50rem;
+    background-color: rgba(229, 229, 229);
+    border-radius: 20 / 50rem;
+}
+// 上半部分
+.wTop {
+    width: 670 / 50rem;
+    height: 100 / 50rem;
+    margin: auto;
+    padding-top: 5 / 50rem;
+    div {
+        float: left;
+    }
+    // 种草 好物分享
+    div:nth-child(1) {
+        width: 260 / 50rem;
+        margin-top: 30 / 50rem;
+        span:nth-child(1) {
+            width: 98 / 50rem;
+            font-weight: 500;
+            font-size: 40 / 50rem;
+            border-right: 1px solid #333;
+            padding-right: 20 / 50rem;
+            font-weight: 600;
+        }
+        span:nth-child(2) {
+            width: 156 / 50rem;
+            font-size: 30 / 50rem;
+            padding-left: 22 / 50rem;
+            color: #666;
+        }
+    }
+    div:nth-child(2) {
+        float: right;
+        margin-top: 25 / 50rem;
+        width: 80 / 50rem;
+        height: 42 / 50rem;
+        background-color: rgba(229, 229, 229);
+        border-radius: 25 / 50rem;
+        border: 5/50rem solid #000;
+        font-size: 20/50rem;
+        line-height: 38 / 50rem;
+        text-align: center;
+    }
+}
+
+// 下半部分
+.wBottom {
+    width: 680 / 50rem;
+    height: 312 / 50rem;
+    margin: auto;
+    border-radius: 25 / 50rem;
+    span {
+        display: inline-block;
+        width: 215 / 50rem;
+        height: 280 / 50rem;
+        margin-left: 5 / 50rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+
+/*banner*/
+.ifban{ width: 100%;overflow: hidden;margin:0% 0% 3% 0%; }
+.news-banner{width:93%;overflow:hidden;position:relative;margin:0 auto;height:115px;border-radius:5px}
+.mui-table-view-cell{padding:0}
+.news-banner ul:first-child{width:1000%;transform:translate(-10%);-webkit-transform:translate(-10%)}
+.news-banner ul:first-child li{width:10%;float:left}
+.news-banner ul:first-child li a{display:block;width:100%;height:115px}
+.news-banner ul:first-child li a img{display:block;width:100%;height:115px}
+.news-banner ul:last-child{position:absolute;height:6px;left:50%;bottom:6px;transform:translate(-50%,0)}
+.news-banner ul:last-child li{width:6px;height:6px;border-radius:50%;border:1px solid #fff;margin-left:10px;float:left;}
+.news-banner ul:last-child li:first-child{margin-left:0;}
+.news-banner ul:last-child .now{background-color:#fff;width: 15px;border-radius: 10px;}
+
+
+
+.box01_list .li_list .li-listcp{margin-bottom: 5%;padding-left: 3.48%;}
+.box01_list .li_list .li-listcp span{ width: 20%;float: left;}
+.box01_list .li_list .li-listcp span:nth-child(odd){}
+.box01_list .li_list .li-listcp span:nth-child(even){margin:0% 5%;}
+.box01_list .li_list .li-listcp img{width: 100%;}
+.box01_list .li_list .li-listcp p{font-size: 0.1rem;-webkit-transform:scale(0.8);-ms-transform:scale(0.8);-moz-transform:scale(0.8);-o-transform:scale(0.8);}
+
+.fan-xsban{background: #e5e5e5;padding:3% 3%;border-radius: 5px;}
+.fan-xsban .fand-banh1{margin-bottom:1%; color: #666;}
+.fan-xsban .fand-banh1 span:nth-of-type(1){border-right: 1px solid #666;font-size: 2rem;color: #000;padding-right: 2%;font-weight: bold;}
+.fan-xsban .fand-banh1 span:nth-of-type(2){margin-left:2%;font-size: 1.3rem;}
+.fan-xsban .fand-banh1 a{ float: right;border:2.5px solid #000;border-radius: 25px;padding:0% 2%;color: #333; }
+.fan-xsban .fand-banhul{margin-top:4%; overflow: hidden;    width: 100%;}
+.fan-xsban .fand-banhul span{ width: 32.6% !important; float: left; }
+.fan-xsban .fand-banhul span img{ width: 100%; }
+.fan-xsban .fand-banhul span:nth-of-type(2){margin:0% 1% !important;}
+
+.news-banner {
+    margin-top: 35 / 50rem;
+}
